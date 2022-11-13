@@ -1,0 +1,144 @@
+.explore {
+  display: flex;
+  justify-content: space-between;
+  background: #003459;
+  border-radius: 20px;
+  margin-top: 60px;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  .index {
+    z-index: 3;
+    width: 500px;
+    margin-left: 150px;
+    padding-top: 50px;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 68px;
+    color: #003459;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #003459;
+  }
+  p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #242b33;
+    margin-top: 8px;
+    margin-bottom: 30px;
+  }
+}
+.explore-img {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  z-index: 0;
+}
+.explore-img2 {
+  position: absolute;
+  top: -280px;
+  right: -160px;
+  z-index: 1;
+}
+.explore-women {
+  position: absolute;
+  z-index: 10;
+}
+@media only screen and (max-width: 834px) {
+  .explore {
+    display: block;
+    height: 700px;
+    .index {
+      z-index: 3;
+      position: absolute;
+      h2 {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 54px;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        width: 342px;
+      }
+    }
+    .explore-img {
+      position: absolute;
+      top: 500px;
+      left: 0px;
+      z-index: 0;
+    }
+    .explore-img2 {
+      position: absolute;
+      top: -320px;
+      right: 70px;
+      z-index: 1;
+    }
+    .explore-women {
+      position: absolute;
+      top: 350px;
+      right: 100px;
+      z-index: 10;
+    }
+  }
+}
+@media only screen and (max-width: 414px) {
+  .explore {
+    display: block;
+    height: 700px;
+    .index {
+      z-index: 3;
+      position: absolute;
+      margin: 0 auto;
+      margin-left: 20px;
+      h2 {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 54px;
+        margin-right: 50px;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        width: 342px;
+      }
+    }
+    .explore-img {
+      position: absolute;
+      top: 500px;
+      left: 0px;
+      z-index: 0;
+    }
+    .explore-img2 {
+      position: absolute;
+      top: -320px;
+      right: -180px;
+      z-index: 1;
+    }
+    .explore-women {
+      position: absolute;
+      top: 350px;
+      right: -60px;
+      z-index: 10;
+    }
+  }
+}

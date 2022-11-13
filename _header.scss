@@ -1,0 +1,142 @@
+.backgraund {
+  max-width: 1440px;
+  width: 100%;
+  background: linear-gradient(
+    102.87deg,
+    #fceed5 6.43%,
+    #fceed5 78.33%,
+    #ffe7ba 104.24%
+  );
+  z-index: 1;
+  .hidden {
+    overflow: hidden;
+  }
+}
+header {
+  .font-bar{
+    display: none;
+  }
+  .font-search{
+    display: none;
+  }
+  display: flex;
+  padding: 30px 0 0 0;
+  img {
+    position: absolute;
+    z-index: 1;
+  }
+  ul {
+    display: flex;
+    gap: 48px;
+    margin-left: 150px;
+    margin-top: 10px;
+    li a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #003459;
+    }
+  }
+  .input {
+    margin-left: 30px;
+    margin-right: 14px;
+    position: relative;
+    i {
+      position: absolute;
+      left: 15px;
+      top: 13px;
+    }
+    input {
+      border: none;
+      background-color: #fdfdfd;
+      padding: 12px 67px 12px 40px;
+      border-radius: 40px;
+      color: #99a2a5;
+    }
+  }
+}
+@media only screen and (max-width: 834px) {
+  .backgraund {
+    width: 810px;
+    background-color: black;
+  }
+  header {
+    display: flex;
+    padding: 30px 0 0 0;
+    justify-content: center;
+    .font-bar{
+      display: block;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      z-index: 2;
+    }
+    .font-search{
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 0px;
+    }
+    .btn {
+      display: none;
+    }
+    img {
+      position: absolute;
+
+      z-index: 1;
+    }
+    ul {
+      display: none;
+
+      li a {
+        display: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #003459;
+      }
+    }
+    .input {
+      display: none;
+      margin-left: 30px;
+      margin-right: 14px;
+      position: relative;
+
+      input {
+        border: none;
+        background-color: #fdfdfd;
+        padding: 12px 67px 12px 40px;
+        border-radius: 40px;
+        color: #99a2a5;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 414px) {
+  .backgraund {
+    width: 390px;}
+    header {
+      display: flex;
+      padding: 30px 0 0 0;
+      justify-content: center;
+      div{
+        img{
+          position: absolute;
+          right: 100px;
+        }
+      }
+      .font-bar{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        z-index: 2;
+      }
+      .font-search{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 0px;
+      }
+    }
+  }

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  border: 1 px solid;
+}
+.loading{
+    background-color: lavender;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    z-index: 9999;
+    animation: ketish .3s linear 3s  ;
+    animation-fill-mode: both;
+    .loading-img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        animation: aylanish 1s ease-in-out  infinite  ;
+    }
+    @keyframes aylanish {
+        from{
+            transform: rotate(360deg);
+        }
+        
+    }
+    @keyframes ketish {
+        to{
+            opacity: -10 ;
+        }
+        
+    }
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: white;
+}
+.container-2 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.wrapper {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.btn {
+  display: inline-block;
+  color: #fdfdfd;
+  padding: 12px 28px;
+  gap: 10px;
+  background: #003459;
+  border-radius: 57px;
+}
+.btn-2 {
+  display: inline-block;
+  color: #003459;
+  border: 1px solid #003459;
+  padding: 12px 28px;
+  gap: 10px;
+  border-radius: 57px;
+}
+.grid {
+  display: grid;
+}
+@media only screen and (max-width: 834px) {
+  .container {
+    width: 810px;
+  }
+  .wrapper {
+    width: 760px;
+  }
+}
+@media only screen and (max-width: 414px) {
+    .container {
+      width: 390px;
+    }
+    .wrapper {
+      width: 370px;
+    }
+  }
